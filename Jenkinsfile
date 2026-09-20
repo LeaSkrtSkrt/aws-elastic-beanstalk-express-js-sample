@@ -111,7 +111,7 @@ pipeline {
         always {
             archiveArtifacts(
                 artifacts: 'test-output.txt,npm-audit.txt',
-                allowEmpty: true,
+                allowEmptyArchive: true,
                 fingerprint: true
             )
         }
